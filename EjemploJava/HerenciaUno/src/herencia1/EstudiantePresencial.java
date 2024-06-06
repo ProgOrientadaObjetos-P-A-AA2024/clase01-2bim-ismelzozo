@@ -44,7 +44,23 @@ public class EstudiantePresencial extends Estudiante{
     
     @Override
     public String toString(){
-        return nombresEstudiante;
+        String cadena = String.format("DATOS DEL ESTUDIANTE MODALIDAD PRESENCIAL\n"
+                + "Nombre: %s\n"
+                + "Apellido: %s\n"
+                + "Indentidficacion; %s\n"
+                + "Edad: %s\n"
+                + "Numero de creditos: %s\n"
+                + "Costo de creditos: %.2f\n"
+                + "Costo Matricula %.2f\n"
+                + nombresEstudiante,
+                apellidosEstudiante,
+                identificacionEstudiante,
+                edadEstudiante,
+                numeroCreditos,
+                costoCredito,
+                matriculaPresencial);
+        return cadena;
+        // podemos utilizar los atributos de la superclase 
     }
     
 }
